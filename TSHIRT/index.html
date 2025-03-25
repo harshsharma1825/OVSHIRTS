@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OvShirts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header" id="header">
+        <center>
+            <a href="index.html"><button>Home</button></a>
+            <a href=""><button>About</button></a>
+            <button id="cart-button" onclick="openCart()">Cart</button>
+        </center>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">
+                <img src="./images/lens-icon.png" alt="Search" class="lens-icon">
+            </button>
+        </div>
+    </div>
+
+    <!-- Body with catalog -->
+    <div class="body">
+        <div class="catalog">
+            <div class="shirt">
+                <img src="./images/Shirt1.jpg" alt="Shirt 1">
+                <p class="shirt-name">Formal Wear</p>
+                <p class="price">$20.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 1', 20.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt2.jpg" alt="Shirt 2">
+                <p class="shirt-name">Brown-Grey</p>
+                <p class="price">$25.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 2', 25.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt3.jpg" alt="Shirt 3">
+                <p class="shirt-name">Sea Green-orange</p>
+                <p class="price">$22.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 3', 22.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt4.jpg" alt="Shirt 4">
+                <p class="shirt-name">Violet-Pink</p>
+                <p class="price">$18.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 4', 18.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt5.jpg" alt="Shirt 5">
+                <p class="shirt-name">Blue-Grey</p>
+                <p class="price">$30.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 5', 30.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt6.jpg" alt="Shirt 6">
+                <p class="shirt-name">Yellow-Grey</p>
+                <p class="price">$27.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 6', 27.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt7.jpg" alt="Shirt 7">
+                <p class="shirt-name">Green-Violet</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 7', 19.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt8.jpg" alt="Shirt 8">
+                <p class="shirt-name">Grey-Brown</p>
+                <p class="price">$23.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 8', 23.99)">Add to Cart</button>
+            </div>
+            <div class="shirt">
+                <img src="./images/Shirt9.jpg" alt="Shirt 9">
+                <p class="shirt-name">Light-Dark blue</p>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart" onclick="addToCart('Shirt 9', 24.99)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 OvShirts. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-btn" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div> <!-- Cart items will appear here -->
+            <p id="cart-total">Total: $0.00</p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
